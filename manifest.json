@@ -1,0 +1,10 @@
+{
+  "name": "Year-Off Countdown",
+  "description": "Overrides the new tab page",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "countdown.html"
+  },
+  "manifest_version": 2
+}

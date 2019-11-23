@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+  shape-rendering: crispEdges;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.month {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  margin: 20px 0;
+}
+.stat {
+  margin-right: 20px;
+}
+.stats-title {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+}
+.stat h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.month-label {
+  fill: #999;
+}
+.year-label {
+  fill: #777;
+  font-size: 15px;
+}
+
+</style>
+<body>
+  <h1>Countdown</h1>
+  <div class="stats">
+    <div class="stat">
+      <div class="stats-title">
+        Days elapsed
+      </div>
+      <h2 class="elapsed"></h2>
+    </div>
+    <div class="stat">
+      <div class="stats-title">
+       Days Til 6mo
+      </div>
+      <h2 class="remaining-6"></h2>
+    </div>
+    <div class="stat">
+      <div class="stats-title">
+       Days til 1yr
+      </div>
+      <h2 class="remaining-12"></h2>
+    </div>
+  </div>
+  <svg></svg>
+
+  <script type="text/javascript" src="d3.v4.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
